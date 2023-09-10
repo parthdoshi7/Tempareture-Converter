@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+    min-height: 100vh;
+    font-family: 'Times New Roman', serif;
+}
+
+.container {
+    background-image: linear-gradient(to top, #a8edea 30%, #fed6e3 70%);
+    max-width: 450px;
+    min-width: 350px;
+    max-height: 380px;
+    box-shadow: 0 5px 10px rgba(135, 115, 115, 0.703);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 280px;
+    align-items: center;
+}
+
+.container h2 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 30px;
+}
+
+.temp-label {
+    width: 100%;
+    padding: 15px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+label {
+    margin-left: 15px;
+}
+
+.user_input {
+    width: 220px;
+    font-family: 'Times New Roman', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px;
+    margin-top: -5px;
+    float: right;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.703);
+    background: rgba(42, 37, 37, 0);
+    border-color: rgba(251, 251, 251, 0.91);
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.user_input::placeholder {
+    color: rgba(0, 0, 0, 0.317);
+}
+
+.button {
+    width: 60px;
+    padding: 15px;
+    margin-top: -5px;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.temp_convert:hover {
+    background: rgba(225, 129, 131, 0.612);
+}
+
+.temp_convert {
+    font-family: 'Times New Roman', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.703);
+    background: rgba(4, 3, 3, 0);
+    border-color: rgba(251, 251, 251, 0.91);
+}
+
+
+/* --------------Media Query----------------- */
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        width: 75vw;
+    }
+}
